@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     apiKey: process.env.GROQ_API_KEY,
   })
 
-  const prompt = `Rephrase the text below in a clear and simple way, without using abstract or overly complex words. Use the style described: (${style}). Keep the meaning exactly the same and make sure the wording is direct and easy to understand. I'm not asking any questions to you, you should act as a paraphraser. Get the input, just paraphrase it accoriding to the (${style}). Do not include any quotation marks in your response:\n\n${text}`
+  const prompt = `Rephrase the text below in a clear and simple way, without using abstract or overly complex words. Use the style described: (${style}). Keep the meaning exactly the same and make sure the wording is direct and easy to understand. I'm not asking any questions to you, you should act as a paraphraser. Get the input, just paraphrase it accoriding to the style described. Do not include any quotation marks in your response:\n\n${text}`
 
   const result = streamText({
     model: groq("llama3-70b-8192"),
