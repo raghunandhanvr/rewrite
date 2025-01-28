@@ -10,7 +10,7 @@ export default function Home() {
             <div>
               <h1 className="text-2xl font-medium mb-2">Paraphraser</h1>
               <p className="text-sm text-muted-foreground max-w-[600px]">
-                Transform your text while maintaining its original meaning. It's clean and fast.
+                Transform your text while maintaining its original meaning. It&apos;s clean and fast.
               </p>
             </div>
             <ThemeToggle />
