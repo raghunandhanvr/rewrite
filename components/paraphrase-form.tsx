@@ -35,6 +35,7 @@ export default function ParaphraseForm() {
 
   const clearInput = useCallback(() => {
     setInput("")
+    setResult("")
     track("clear_input")
   }, [])
 
