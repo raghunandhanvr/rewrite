@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .container {
+    @apply w-full max-w-4xl mx-auto px-4;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
