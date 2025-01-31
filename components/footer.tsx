@@ -18,13 +18,13 @@ export function Footer() {
       try {
         const data = await fetchCounts()
         setCountData(data)
-      } catch (err: any) {
-        setError(err.message || "Unknown error occurred")
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : "Unknown error occurred")
       } finally {
         setLoading(false)
       }
     }
-
+  
     getCounts()
   }, [])
 

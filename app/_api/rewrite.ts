@@ -10,7 +10,7 @@ export async function rewriteText(text: string, style: RewriteStyle, onUpdate: (
   let gaid: string
   try {
     gaid = await createRequestSignature(payload, timestamp)
-  } catch (signatureError) {
+  } catch {
     throw new Error("Failed to generate Google Analytics ID. Please try again later.")
   }
 

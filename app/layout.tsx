@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://rewriter.raghu.app",
+    url: "https://rewrite.raghu.app",
     siteName: "Rewrite Website",
     images: [
       {

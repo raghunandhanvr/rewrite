@@ -25,12 +25,10 @@ export default function InputArea({ input, setInput, isLoading, style, setStyle,
   return (
     <div className="flex-1 space-y-4">
       <Textarea
-        placeholder={
-          window.innerWidth >= 768 ? "Enter your text here... (⌘/Ctrl + Enter to rewrite)" : "Enter your text here..."
-        }
+        placeholder="Enter your text here..."
+        className="h-[300px] border-dotted [&::placeholder]:md:content-['Enter_your_text_here...(⌘/Ctrl_+_Enter_to_rewrite)']"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        className="h-[300px] border-dotted"
         data-gramm="false"
         data-gramm_editor="false"
         data-enable-grammarly="false"
