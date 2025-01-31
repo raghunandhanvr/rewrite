@@ -79,14 +79,6 @@ export const COUNTRIES = [
   { value: "zw", label: "🇿🇼 Zimbabwe" },
 ] as const;
 
-
-export const DROPDOWN_INFO = {
-  style: "Choose the writing style for paraphrasing",
-  gender: "Select the gender perspective for the paraphrased text",
-  country: "Pick a country to adapt the language and expressions",
-  intensity: "Set how much the original text should be changed",
-}
-
 export const DROPDOWN_ICONS = {
   style: Wand2,
   gender: User,

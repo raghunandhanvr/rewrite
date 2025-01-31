@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server";
 import { verifyRequestSignature } from "@/lib/security";
 
 export async function middleware(request: NextRequest) {
-  if (request.nextUrl.pathname.startsWith("/api/paraphrase")) {
+  if (request.nextUrl.pathname.startsWith("/api/rewrite")) {
     let body: any;
 
     try {
